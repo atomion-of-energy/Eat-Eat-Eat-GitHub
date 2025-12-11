@@ -1,7 +1,7 @@
-Name: Donald Zhang
-Date: 12/9/2025
-Contact: dzhang22@pratt.edu
-License: Open Source, Creative Commons
+  Name: Donald Zhang
+  Date: 12/9/2025
+  Contact: dzhang22@pratt.edu
+  License: Open Source, Creative Commons
 
 About: Eat Eat Eat is a fish-eating game where the player starts as a small fish. During each run, the player can grow by finding and eating smaller fish. They can also occasionally find rare, sinking loot to earn extra cash or to satiate their draining hunger bar. When the player gets eaten by a larger fish, they die and return to the home screen. Back on the home screen, the player can purchase upgrades from the shop using the cash they earn from their runs. Once the player is ready, they can start their next run and continue through the main gameplay loop.
 

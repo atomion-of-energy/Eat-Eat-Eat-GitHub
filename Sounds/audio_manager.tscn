@@ -1,0 +1,29 @@
+[gd_scene load_steps=7 format=3 uid="uid://bkkhfjrs1pmnd"]
+
+[ext_resource type="Script" uid="uid://b8eioy8t3tcec" path="res://Singletons/audio_manager.gd" id="1_cwel6"]
+[ext_resource type="AudioStream" uid="uid://wilbc1csr378" path="res://Sounds/Lobsterfunk.mp3" id="2_h4g2s"]
+[ext_resource type="AudioStream" uid="uid://daw6xquchl7bb" path="res://Sounds/Eating_SFX.mp3" id="3_q1ykq"]
+[ext_resource type="AudioStream" uid="uid://caq036tld8wep" path="res://Sounds/Eating_SFX2.mp3" id="4_7i74r"]
+[ext_resource type="AudioStream" uid="uid://b1citbks08bfn" path="res://Sounds/Button_UI_SFX_1.wav" id="5_2p8lk"]
+[ext_resource type="AudioStream" uid="uid://bjd8oulw76tgf" path="res://Sounds/coin.wav" id="6_u33so"]
+
+[node name="AudioManager" type="Node"]
+script = ExtResource("1_cwel6")
+
+[node name="Default BGM" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_h4g2s")
+parameters/looping = true
+
+[node name="Eating Sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_q1ykq")
+
+[node name="Eating Sound2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_7i74r")
+volume_db = 10.0
+
+[node name="Button UI SFX" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_2p8lk")
+volume_db = 10.0
+
+[node name="Coin SFX" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_u33so")

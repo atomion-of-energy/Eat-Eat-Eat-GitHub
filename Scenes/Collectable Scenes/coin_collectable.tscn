@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://blb0w0pdylbs4"]
+
+[ext_resource type="PackedScene" uid="uid://bnte7vg0iqumh" path="res://Scenes/Collectable Scenes/collectable_template.tscn" id="1_tet37"]
+[ext_resource type="Texture2D" uid="uid://b4e0w62fl8w77" path="res://Assets/Loots/Coin.png" id="2_rib3m"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_tet37"]
+radius = 13.0
+
+[node name="Coin" instance=ExtResource("1_tet37")]
+collision_mask = 2
+cash_amount = 1
+type = "Cash"
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("2_rib3m")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
+shape = SubResource("CircleShape2D_tet37")
+
+[node name="Timer" parent="." index="2"]
+wait_time = 30.0

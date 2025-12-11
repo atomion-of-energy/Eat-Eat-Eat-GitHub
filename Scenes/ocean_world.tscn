@@ -1,0 +1,90 @@
+[gd_scene load_steps=11 format=3 uid="uid://dtq35krssjx6r"]
+
+[ext_resource type="Script" uid="uid://ykrq4rx4evrl" path="res://Scripts/ocean_world.gd" id="1_3s2x0"]
+[ext_resource type="PackedScene" uid="uid://dmqskhnvuqydx" path="res://Scenes/player_fish.tscn" id="1_ervat"]
+[ext_resource type="Script" uid="uid://b8cd5utv2wejx" path="res://Scripts/enemy_manager.gd" id="1_ethbp"]
+[ext_resource type="Texture2D" uid="uid://dayrlas80tltm" path="res://Assets/Underwater Background2.png" id="2_rnkn8"]
+[ext_resource type="PackedScene" uid="uid://bpih6oulmdx6q" path="res://Scenes/enemy_fish.tscn" id="3_jfwad"]
+[ext_resource type="Script" uid="uid://dxpfji6vpauqb" path="res://Scripts/collectable_manager.gd" id="5_rnkn8"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_n4g7h"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_jfwad"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_ethbp"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_3s2x0"]
+
+[node name="Ocean_World" type="Node2D" node_paths=PackedStringArray("enemy_spawn_timer")]
+script = ExtResource("1_3s2x0")
+enemy_spawn_timer = NodePath("EnemySpawnTimer")
+
+[node name="Ocean Background" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(4, 4)
+texture = ExtResource("2_rnkn8")
+centered = false
+
+[node name="World_Borders" type="Node2D" parent="."]
+
+[node name="LeftBoundary" type="StaticBody2D" parent="World_Borders"]
+collision_layer = 512
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World_Borders/LeftBoundary"]
+rotation = 1.5708
+shape = SubResource("WorldBoundaryShape2D_n4g7h")
+
+[node name="RightBoundary" type="StaticBody2D" parent="World_Borders"]
+collision_layer = 512
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World_Borders/RightBoundary"]
+position = Vector2(7688, 0)
+rotation = -1.5708
+shape = SubResource("WorldBoundaryShape2D_jfwad")
+
+[node name="TopBoundary" type="StaticBody2D" parent="World_Borders"]
+collision_layer = 512
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World_Borders/TopBoundary"]
+rotation = 3.14159
+shape = SubResource("WorldBoundaryShape2D_ethbp")
+
+[node name="BottomBoundary" type="StaticBody2D" parent="World_Borders"]
+collision_layer = 512
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World_Borders/BottomBoundary"]
+position = Vector2(0, 4320)
+shape = SubResource("WorldBoundaryShape2D_3s2x0")
+
+[node name="EnemyManager" type="Node2D" parent="."]
+script = ExtResource("1_ethbp")
+enemies = Dictionary[String, PackedScene]({
+"fish": ExtResource("3_jfwad")
+})
+
+[node name="CollectableManager" type="Node2D" parent="." node_paths=PackedStringArray("loot_timer")]
+script = ExtResource("5_rnkn8")
+loot_timer = NodePath("../LootTimer")
+
+[node name="Player_Fish" parent="." instance=ExtResource("1_ervat")]
+position = Vector2(1635, 1056)
+
+[node name="EnemySpawnTimer" type="Timer" parent="."]
+wait_time = 0.3
+autostart = true
+
+[node name="LootTimer" type="Timer" parent="."]
+wait_time = 5.0
+autostart = true
+
+[node name="EnemyDespawnTimer" type="Timer" parent="."]
+wait_time = 10.0
+autostart = true
+
+[connection signal="timeout" from="EnemySpawnTimer" to="EnemyManager" method="_on_enemy_spawn_timer_timeout"]
+[connection signal="timeout" from="LootTimer" to="CollectableManager" method="_on_loot_timer_timeout"]
+[connection signal="timeout" from="EnemyDespawnTimer" to="EnemyManager" method="_on_enemy_despawn_timer_timeout"]

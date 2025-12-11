@@ -1,0 +1,73 @@
+[gd_scene load_steps=8 format=3 uid="uid://bpih6oulmdx6q"]
+
+[ext_resource type="Script" uid="uid://w63xaay0yoji" path="res://Scripts/enemy_fish.gd" id="1_l01v0"]
+[ext_resource type="Texture2D" uid="uid://dnvfvsnyvqwsl" path="res://Assets/Fish_Mockups/DEEP OCEAN FISH .png" id="2_1vm23"]
+[ext_resource type="Resource" uid="uid://bw20deg7vp8dm" path="res://Resource/player_stats.tres" id="2_1x7eh"]
+[ext_resource type="Script" uid="uid://byas67nd2rqct" path="res://Scripts/enemy_interaction.gd" id="4_2ey11"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1x7eh"]
+height = 48.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1vm23"]
+radius = 149.003
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sypfk"]
+radius = 11.0
+height = 48.0
+
+[node name="Enemy_Fish" type="CharacterBody2D"]
+modulate = Color(2, 2, 2, 1)
+texture_filter = 1
+collision_layer = 16
+collision_mask = 0
+script = ExtResource("1_l01v0")
+player_stats = ExtResource("2_1x7eh")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_1vm23")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_1x7eh")
+
+[node name="Movement Timer" type="Timer" parent="."]
+wait_time = 3.0
+autostart = true
+
+[node name="Label" type="Label" parent="."]
+visible = false
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -14.0
+offset_top = -29.0
+offset_right = 26.0
+offset_bottom = -6.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(0.7, 0.7)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SightRange" type="Area2D" parent="."]
+collision_layer = 0
+
+[node name="SightRangeCollision" type="CollisionShape2D" parent="SightRange"]
+shape = SubResource("CircleShape2D_1vm23")
+
+[node name="EnemyInteraction" type="Area2D" parent="."]
+collision_layer = 16
+collision_mask = 0
+script = ExtResource("4_2ey11")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyInteraction"]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_sypfk")
+
+[connection signal="timeout" from="Movement Timer" to="." method="_on_movement_timer_timeout"]
+[connection signal="body_entered" from="SightRange" to="." method="_on_sight_range_body_entered"]
+[connection signal="body_exited" from="SightRange" to="." method="_on_sight_range_body_exited"]

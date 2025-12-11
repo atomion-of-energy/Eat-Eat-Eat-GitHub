@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="SaveData" load_steps=3 format=3 uid="uid://bgk6iui74opvm"]
+
+[ext_resource type="Resource" uid="uid://bw20deg7vp8dm" path="res://Resource/player_stats.tres" id="1_8rh1r"]
+[ext_resource type="Script" uid="uid://bshs02ybn7i6x" path="res://Scripts/save_data.gd" id="2_co05m"]
+
+[resource]
+script = ExtResource("2_co05m")
+player_stats_data = ExtResource("1_8rh1r")
+player_cash = 0.0
+player_high_score = 0
+button_levels = {}
+metadata/_custom_type_script = "uid://bshs02ybn7i6x"

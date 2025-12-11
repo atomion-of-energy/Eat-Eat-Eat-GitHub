@@ -1,0 +1,81 @@
+[gd_scene load_steps=10 format=3 uid="uid://dmqskhnvuqydx"]
+
+[ext_resource type="Script" uid="uid://e81jfvop1svn" path="res://Scripts/player_fish.gd" id="1_8dcr1"]
+[ext_resource type="Texture2D" uid="uid://b61bvxxixnrop" path="res://Assets/Fish_Mockups/Aji.png" id="2_qxj6v"]
+[ext_resource type="Resource" uid="uid://bw20deg7vp8dm" path="res://Resource/player_stats.tres" id="2_y62r6"]
+[ext_resource type="Script" uid="uid://c4rmjcwnixjqv" path="res://Scripts/interaction_component.gd" id="3_rl418"]
+[ext_resource type="Texture2D" uid="uid://1bgl4550w0al" path="res://Assets/Tiny Under Progress Bar.png" id="4_6gdld"]
+[ext_resource type="Texture2D" uid="uid://eov18n5bq1c7" path="res://Assets/Tiny Over Progress Bar.png" id="5_y62r6"]
+[ext_resource type="Texture2D" uid="uid://bv56i8yktvvcp" path="res://Assets/Tiny Progress Bar.png" id="6_xybjw"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qxj6v"]
+radius = 13.0
+height = 52.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rl418"]
+radius = 13.0
+height = 52.0
+
+[node name="Player_Fish" type="CharacterBody2D"]
+z_index = 10
+collision_mask = 512
+script = ExtResource("1_8dcr1")
+player_stats = ExtResource("2_y62r6")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, 3.55271e-15)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_qxj6v")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(0, -2)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_qxj6v")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+texture_filter = 1
+zoom = Vector2(0.1, 0.1)
+limit_left = 0
+limit_top = 0
+limit_right = 3200
+limit_bottom = 2132
+limit_smoothed = true
+position_smoothing_enabled = true
+
+[node name="Label" type="Label" parent="."]
+visible = false
+offset_left = -20.0
+offset_top = -55.0
+offset_right = 20.0
+offset_bottom = -32.0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DashBar" type="TextureProgressBar" parent="."]
+texture_filter = 1
+offset_left = -16.0
+offset_top = -24.0
+offset_bottom = -20.0
+scale = Vector2(2, 2)
+value = 50.0
+texture_under = ExtResource("4_6gdld")
+texture_over = ExtResource("5_y62r6")
+texture_progress = ExtResource("6_xybjw")
+tint_under = Color(0.2565, 0.776625, 0.95, 1)
+tint_progress = Color(0.21, 1, 0.973667, 1)
+
+[node name="InteractionComponent" type="Area2D" parent="." node_paths=PackedStringArray("player")]
+collision_layer = 2
+collision_mask = 20
+script = ExtResource("3_rl418")
+player = NodePath("..")
+player_stats = ExtResource("2_y62r6")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="InteractionComponent"]
+position = Vector2(0, -2)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_rl418")
+
+[connection signal="area_entered" from="InteractionComponent" to="InteractionComponent" method="_on_area_entered"]
+[connection signal="body_entered" from="InteractionComponent" to="InteractionComponent" method="_on_collectable_entered"]

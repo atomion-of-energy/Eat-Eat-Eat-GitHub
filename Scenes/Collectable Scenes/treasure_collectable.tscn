@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://dmjqlrfsaq75u"]
+
+[ext_resource type="PackedScene" uid="uid://bnte7vg0iqumh" path="res://Scenes/Collectable Scenes/collectable_template.tscn" id="1_isyp7"]
+[ext_resource type="Texture2D" uid="uid://bysrqdchx56v6" path="res://Assets/Loots/Treasure Chest.png" id="2_ro74j"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_murj7"]
+size = Vector2(50, 48)
+
+[node name="Treasure" instance=ExtResource("1_isyp7")]
+cash_amount = 10
+type = "Cash"
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("2_ro74j")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="2"]
+shape = SubResource("RectangleShape2D_murj7")

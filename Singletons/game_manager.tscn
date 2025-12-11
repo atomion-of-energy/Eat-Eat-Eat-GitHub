@@ -1,0 +1,334 @@
+[gd_scene load_steps=8 format=3 uid="uid://e6umx4w8nkyh"]
+
+[ext_resource type="Script" uid="uid://cecqoscigpehj" path="res://Singletons/game_manager.gd" id="1_v566q"]
+[ext_resource type="Resource" uid="uid://bw20deg7vp8dm" path="res://Resource/player_stats.tres" id="2_0pp7j"]
+[ext_resource type="Script" uid="uid://f7srciu8forj" path="res://Scripts/shop.gd" id="2_cifk7"]
+[ext_resource type="Texture2D" uid="uid://buawuvnyo81a7" path="res://Assets/Health Bar Under.png" id="2_s45rt"]
+[ext_resource type="FontFile" uid="uid://dl0jqrxr5ly3s" path="res://Assets/PixelOperator8.ttf" id="3_c1qvb"]
+[ext_resource type="Texture2D" uid="uid://c23dfkxbq1dc4" path="res://Assets/Health Bar Over.png" id="3_cifk7"]
+[ext_resource type="Texture2D" uid="uid://ckeh1k4xa2iep" path="res://Assets/Health Bar.png" id="4_c1qvb"]
+
+[node name="Game_Manager" type="Control" node_paths=PackedStringArray("shop")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = 2.0
+offset_right = 1.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_v566q")
+shop = NodePath("CanvasLayer/Shop Panel/Shop")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Info Panel" type="Panel" parent="CanvasLayer"]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 17.0
+offset_top = -1063.0
+offset_right = 428.0
+offset_bottom = -676.0
+grow_vertical = 0
+
+[node name="Score_Label" type="Label" parent="CanvasLayer/Info Panel"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 10.0
+offset_top = 146.0
+offset_right = 112.0
+offset_bottom = 162.0
+scale = Vector2(1.2, 1.2)
+theme_override_fonts/font = ExtResource("3_c1qvb")
+text = "Score: 0"
+
+[node name="Enemy_Label" type="Label" parent="CanvasLayer/Info Panel"]
+visible = false
+texture_filter = 1
+layout_mode = 0
+offset_left = 10.0
+offset_top = 175.0
+offset_right = 173.0
+offset_bottom = 191.0
+scale = Vector2(1.2, 1.2)
+theme_override_fonts/font = ExtResource("3_c1qvb")
+text = "Enemies: 0"
+
+[node name="Highscore_Label" type="Label" parent="CanvasLayer/Info Panel"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 11.0
+offset_top = 116.0
+offset_right = 173.0
+offset_bottom = 132.0
+scale = Vector2(1.2, 1.2)
+theme_override_fonts/font = ExtResource("3_c1qvb")
+text = "High Score: 0"
+
+[node name="Largest_Size_Label" type="Label" parent="CanvasLayer/Info Panel"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 11.0
+offset_top = 174.0
+offset_right = 173.0
+offset_bottom = 190.0
+scale = Vector2(1.2, 1.2)
+theme_override_fonts/font = ExtResource("3_c1qvb")
+text = "Largest Size: 0"
+
+[node name="PlayerStats_Label" type="Label" parent="CanvasLayer/Info Panel"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 13.0
+offset_top = 234.0
+offset_right = 213.0
+offset_bottom = 561.0
+scale = Vector2(1.2, 1.2)
+theme_override_constants/line_spacing = 10
+theme_override_fonts/font = ExtResource("3_c1qvb")
+text = "Drain: 0.1"
+
+[node name="Save & Quit" type="Button" parent="CanvasLayer/Info Panel"]
+visible = false
+layout_mode = 0
+offset_left = 10.0
+offset_top = 8.0
+offset_right = 202.0
+offset_bottom = 50.0
+text = "Save Progress"
+
+[node name="Reset & Quit" type="Button" parent="CanvasLayer/Info Panel"]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 6.0
+offset_right = 202.0
+offset_bottom = 48.0
+text = "Reset Progress"
+
+[node name="Shop Panel" type="Panel" parent="CanvasLayer"]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 35.0
+offset_top = -14.0
+offset_right = 652.0
+offset_bottom = 432.0
+grow_vertical = 2
+
+[node name="Title" type="Label" parent="CanvasLayer/Shop Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -90.5
+offset_top = 11.0
+offset_right = 90.5
+offset_bottom = 64.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 35
+text = "Shop"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Shop" type="GridContainer" parent="CanvasLayer/Shop Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -283.0
+offset_top = 72.0
+offset_right = 283.0
+offset_bottom = 400.0
+grow_horizontal = 2
+theme_override_constants/h_separation = 19
+theme_override_constants/v_separation = 10
+columns = 3
+script = ExtResource("2_cifk7")
+player_stats = ExtResource("2_0pp7j")
+
+[node name="Button" type="Button" parent="CanvasLayer/Shop Panel/Shop"]
+texture_filter = 1
+custom_minimum_size = Vector2(180, 80)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_c1qvb")
+theme_override_font_sizes/font_size = 15
+text = "BUY"
+
+[node name="Button2" type="Button" parent="CanvasLayer/Shop Panel/Shop"]
+texture_filter = 1
+custom_minimum_size = Vector2(180, 80)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_c1qvb")
+theme_override_font_sizes/font_size = 15
+text = "BUY"
+
+[node name="Button3" type="Button" parent="CanvasLayer/Shop Panel/Shop"]
+texture_filter = 1
+custom_minimum_size = Vector2(180, 80)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_c1qvb")
+theme_override_font_sizes/font_size = 15
+text = "BUY"
+
+[node name="Button4" type="Button" parent="CanvasLayer/Shop Panel/Shop"]
+texture_filter = 1
+custom_minimum_size = Vector2(180, 80)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_c1qvb")
+theme_override_font_sizes/font_size = 15
+text = "BUY"
+
+[node name="Button5" type="Button" parent="CanvasLayer/Shop Panel/Shop"]
+texture_filter = 1
+custom_minimum_size = Vector2(180, 80)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_c1qvb")
+theme_override_font_sizes/font_size = 15
+text = "BUY"
+
+[node name="Button6" type="Button" parent="CanvasLayer/Shop Panel/Shop"]
+texture_filter = 1
+custom_minimum_size = Vector2(180, 80)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_c1qvb")
+theme_override_font_sizes/font_size = 15
+text = "BUY"
+
+[node name="StartGame" type="Button" parent="CanvasLayer"]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -117.0
+offset_top = 95.0
+offset_right = 25.0
+offset_bottom = 126.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(3, 3)
+pivot_offset = Vector2(48, 15)
+theme_override_fonts/font = ExtResource("3_c1qvb")
+text = "Start Game"
+
+[node name="Game_Over_Score" type="Label" parent="CanvasLayer/StartGame"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -114.0
+offset_top = -132.0
+offset_right = 253.0
+offset_bottom = -38.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(0.6, 0.6)
+theme_override_constants/line_spacing = 10
+theme_override_fonts/font = ExtResource("3_c1qvb")
+text = "Highscore:
+Score:
+Largest Size:
+Size:"
+vertical_alignment = 1
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="CanvasLayer"]
+texture_filter = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -441.0
+offset_top = 25.0
+offset_right = -265.0
+offset_bottom = 33.0
+grow_horizontal = 2
+scale = Vector2(5, 5)
+step = -1.0
+value = 50.0
+texture_under = ExtResource("2_s45rt")
+texture_over = ExtResource("3_cifk7")
+texture_progress = ExtResource("4_c1qvb")
+tint_under = Color(0.109804, 1, 1, 1)
+tint_over = Color(0.0901961, 0.737255, 1, 1)
+tint_progress = Color(0.513726, 1, 0.588235, 1)
+
+[node name="Cash_Label" type="Label" parent="CanvasLayer/TextureProgressBar"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -56.0
+offset_top = 5.0
+offset_right = 168.0
+offset_bottom = 21.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.5, 0.5)
+theme_override_fonts/font = ExtResource("3_c1qvb")
+text = "$0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Bottom Panel" type="Panel" parent="CanvasLayer"]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -964.0
+offset_top = -58.0
+offset_right = 964.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Credit" type="Label" parent="CanvasLayer/Bottom Panel"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -307.0
+offset_top = -17.5
+offset_right = -25.0
+offset_bottom = 17.5
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_c1qvb")
+text = "Design by Donald Zhang
+BGM by Theo Chan"
+
+[node name="How To" type="Label" parent="CanvasLayer/Bottom Panel"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 28.0
+offset_top = -17.5
+offset_right = 290.0
+offset_bottom = 17.5
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_c1qvb")
+text = "\"WASD\" for Movement
+[SPACE] to Dash"
+
+[node name="Health_Drain_Timer" type="Timer" parent="."]
+wait_time = 10.0
+autostart = true
+
+[connection signal="pressed" from="CanvasLayer/Info Panel/Save & Quit" to="." method="_on_save__quit_pressed"]
+[connection signal="pressed" from="CanvasLayer/Info Panel/Reset & Quit" to="." method="_on_new_file_pressed"]
+[connection signal="pressed" from="CanvasLayer/StartGame" to="." method="_on_start_game_pressed"]
+[connection signal="timeout" from="Health_Drain_Timer" to="." method="_on_health_drain_timer_timeout"]

@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://b0t7uohkun248"]
+
+[ext_resource type="PackedScene" uid="uid://bnte7vg0iqumh" path="res://Scenes/Collectable Scenes/collectable_template.tscn" id="1_xl02k"]
+[ext_resource type="Texture2D" uid="uid://yqxuuf0roqvd" path="res://Assets/Loots/Bag of Coin.png" id="2_plncj"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_a6tso"]
+radius = 16.0
+height = 44.0
+
+[node name="Bag of Coin" instance=ExtResource("1_xl02k")]
+cash_amount = 3
+type = "Cash"
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("2_plncj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="2"]
+position = Vector2(2, 0)
+shape = SubResource("CapsuleShape2D_a6tso")

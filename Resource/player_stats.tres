@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="PlayerStats" load_steps=2 format=3 uid="uid://bw20deg7vp8dm"]
+
+[ext_resource type="Script" uid="uid://bs78rfavvkdfa" path="res://Scripts/player_stats.gd" id="1_smarx"]
+
+[resource]
+script = ExtResource("1_smarx")
+size = 0.5
+cash_multiplier = 1.0
+drain_factor = 100
+healing_factor = 10
+speed = 200
+accer_factor = 5.0
+friction = 3.0
+initial_dash_energy = 10
+dash_factor = 10.0
+dash_velocity = 300
+recharge_speed = 10.0
+metadata/_custom_type_script = "uid://bs78rfavvkdfa"

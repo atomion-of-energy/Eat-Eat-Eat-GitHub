@@ -1,0 +1,98 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1765421424
+export_presets.cfg::TextFile/TextFile::-1::1764738871::0::1::::<><><>0<>0<><>::
+icon.svg::CompressedTexture2D/CompressedTexture2D::9216194564257702791::1761147459::1765421388::1::::<><><>0<>0<>e84c93a49f429fb0a49c8f7c93e55d6c<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+node_2d.tscn::PackedScene/PackedScene::4305840130174931562::1763706199::0::1::::<><><>0<>0<><>::
+::res://Assets/::1765421389
+Health Bar Over.png::CompressedTexture2D/CompressedTexture2D::6725934363506419357::1753730560::1765421388::1::::<><><>0<>0<>be5db0e1cd46b577fac599241f841fd9<>res://.godot/imported/Health Bar Over.png-fc4690b8ec6334275725c7d61790c7bf.ctex::
+Health Bar Under.png::CompressedTexture2D/CompressedTexture2D::3791570170356005296::1753727840::1765421388::1::::<><><>0<>0<>a55002db1c5609d60e6b22127b4c254d<>res://.godot/imported/Health Bar Under.png-1bee3d1dc9b67eb23e79658700b0c87f.ctex::
+Health Bar.png::CompressedTexture2D/CompressedTexture2D::5483459335452572463::1753730657::1765421388::1::::<><><>0<>0<>b3e008e4504b5951969866eb720000d2<>res://.godot/imported/Health Bar.png-b16abdba0d0343939cc46ca22c58fb64.ctex::
+Over Progress Bar.png::CompressedTexture2D/CompressedTexture2D::4293111567594188005::1752086032::1765421388::1::::<><><>0<>0<>8f2839acb2649b7f68f970c67c08b24a<>res://.godot/imported/Over Progress Bar.png-f9a71d94153443654ebfdfa84f911b54.ctex::
+PixelOperator8.ttf::FontFile/FontFile::7983524729826937666::1709866750::1765421387::1::::<><><>0<>0<>544a8cf5005668a36747e9542f370bed<>res://.godot/imported/PixelOperator8.ttf-17e48850c895e551f18f07020558cc6a.fontdata::
+Progress Bar.png::CompressedTexture2D/CompressedTexture2D::8410896457268091150::1752085836::1765421388::1::::<><><>0<>0<>3311c4006102640d0a1242b69536bca6<>res://.godot/imported/Progress Bar.png-b358f4edc3317cab8c380162216e0cef.ctex::
+Seamine_lv1.png::CompressedTexture2D/CompressedTexture2D::333136053295627102::1763688524::1765421388::1::::<><><>0<>0<>89c620e1fab7c74c725da6daeeaa7c4d<>res://.godot/imported/Seamine_lv1.png-18ec7d4448094a500c576be4c69f8394.ctex::
+Tiny Over Progress Bar.png::CompressedTexture2D/CompressedTexture2D::310979905316659676::1752349286::1765421388::1::::<><><>0<>0<>ebf939a5627c4432728b62a2b2115f6a<>res://.godot/imported/Tiny Over Progress Bar.png-57495ee35b517c0d25a5e87b08cfa0e5.ctex::
+Tiny Progress Bar.png::CompressedTexture2D/CompressedTexture2D::3924216016667029055::1752349306::1765421388::1::::<><><>0<>0<>0caaf54651889f46fafee1a9e07312ab<>res://.godot/imported/Tiny Progress Bar.png-64e1766fbda75d429d7fb39120b8c8ab.ctex::
+Tiny Under Progress Bar.png::CompressedTexture2D/CompressedTexture2D::1827359828951105775::1752349341::1765421388::1::::<><><>0<>0<>567edeb3b2916c36bd2e5f3b3b5909fd<>res://.godot/imported/Tiny Under Progress Bar.png-2b54252d0c7f6e8fd092c40f7ec873bb.ctex::
+Under Progress Bar.png::CompressedTexture2D/CompressedTexture2D::2713556343188414061::1752085848::1765421387::1::::<><><>0<>0<>9cce851da14986468c9cab73394adf05<>res://.godot/imported/Under Progress Bar.png-3ef4d75919010906369644ed23f82793.ctex::
+Underwater Background2.png::CompressedTexture2D/CompressedTexture2D::7209858979126738566::1764734978::1765421389::1::::<><><>0<>0<>4b237f5539092a5802d88590b7850856<>res://.godot/imported/Underwater Background2.png-e60be9300ecf6605bbd0f67ca5850846.ctex::
+Underwater Background.jpg::CompressedTexture2D/CompressedTexture2D::1305546086252243028::1761744757::1765421389::1::::<><><>0<>0<>4e58c9ca014d5ff90c042b4dbae3baec<>res://.godot/imported/Underwater Background.jpg-ddfff63babdf924b769385301fa02539.ctex::
+::res://Assets/Fish_Mockups/::1765421388
+Aji copy.png::CompressedTexture2D/CompressedTexture2D::3267396592311157669::1762748247::1765421388::1::::<><><>0<>0<>b77c90a1283e529fbf27deec32d22613<>res://.godot/imported/Aji copy.png-6adbe2f240be0e12d101bd44ee5a9caf.ctex::
+Aji.png::CompressedTexture2D/CompressedTexture2D::4616048120704733511::1700617422::1765421388::1::::<><><>0<>0<>1de119bdc01b0bc1809169dee87df7de<>res://.godot/imported/Aji.png-aea8671cdac526053f33ef80df2bd7fc.ctex::
+DEEP OCEAN FISH .png::CompressedTexture2D/CompressedTexture2D::8115411004466742743::1700619196::1765421388::1::::<><><>0<>0<>e1e6573ea92a486c78e995414c5a52cc<>res://.godot/imported/DEEP OCEAN FISH .png-4a2eb8daa0a0d29f457d1c664ec669d3.ctex::
+DEEP OCEAN FISH(SMALL).png::CompressedTexture2D/CompressedTexture2D::303287791354214349::1700532796::1765421388::1::::<><><>0<>0<>76cd8273c286d10b087dc3a03518bba5<>res://.godot/imported/DEEP OCEAN FISH(SMALL).png-08562fe7773a581f062d4e908326a1b4.ctex::
+desktop.ini::TextFile/TextFile::-1::1700533468::0::1::::<><><>0<>0<><>::
+FindingNimofish.png::CompressedTexture2D/CompressedTexture2D::7961351289231998705::1700534254::1765421388::1::::<><><>0<>0<>f667fbbf4377b5768a1b1f3fe164e527<>res://.godot/imported/FindingNimofish.png-d07936dd16cf0af1d0e189ee1714168e.ctex::
+Normal Ocean Fish (2).png::CompressedTexture2D/CompressedTexture2D::6063769542160086215::1700619178::1765421388::1::::<><><>0<>0<>29b3d404e4d5dfb601d36e595df9a634<>res://.godot/imported/Normal Ocean Fish (2).png-58a7c00e07b6c85ae0e6613bd003f50e.ctex::
+Normal Ocean Fish.png::CompressedTexture2D/CompressedTexture2D::5044716070112127967::1700533062::1765421388::1::::<><><>0<>0<>9116412fb9a757ddc6e2deb9212c08be<>res://.godot/imported/Normal Ocean Fish.png-90dd98d91d77fcd3163b263ae1569e98.ctex::
+Tai.png::CompressedTexture2D/CompressedTexture2D::860351859913615874::1700533376::1765421388::1::::<><><>0<>0<>cefbdc959c7d32d7c0d4939073b9fbb7<>res://.godot/imported/Tai.png-48b6ea14cf9a395394260a57bd5703a1.ctex::
+::res://Assets/Loots/::1765421388
+Bag of Coin.png::CompressedTexture2D/CompressedTexture2D::1718995557439657965::1763501227::1765421388::1::::<><><>0<>0<>5288fa775236ad0e74685f2830b27c13<>res://.godot/imported/Bag of Coin.png-bf1899a2a339313a6bb74136f1948682.ctex::
+Battery.png::CompressedTexture2D/CompressedTexture2D::3854766498912852492::1763565309::1765421388::1::::<><><>0<>0<>9e03d7b79a24106b4caac018c0b951d8<>res://.godot/imported/Battery.png-83ee411fe9c0bdbda2a72d99102ea8a3.ctex::
+Coin.png::CompressedTexture2D/CompressedTexture2D::4431713542674122704::1763501202::1765421388::1::::<><><>0<>0<>98dc0d853425bbf49818e856cd474964<>res://.godot/imported/Coin.png-d9fdaa0412f61088ecca4eeed83d7558.ctex::
+Fish Food.png::CompressedTexture2D/CompressedTexture2D::8705353062733871214::1763564951::1765421388::1::::<><><>0<>0<>11de584047b8e903d9135a52f514032a<>res://.godot/imported/Fish Food.png-bcb4b9f55c1d475519e999a107a398c9.ctex::
+Gem.png::CompressedTexture2D/CompressedTexture2D::4265376386217485917::1763501214::1765421388::1::::<><><>0<>0<>83147878d015875d3719850d54707a00<>res://.godot/imported/Gem.png-3fba536fcd9e510dcd55c1d2bb7fad19.ctex::
+Treasure Chest.png::CompressedTexture2D/CompressedTexture2D::4109172653168121125::1763501239::1765421388::1::::<><><>0<>0<>04b8fcf5252c2ccc213b2aa6a2fdd940<>res://.godot/imported/Treasure Chest.png-202cac1864095efa9717acafabe9a067.ctex::
+::res://Playable Versions/::1765421095
+::res://Playable Versions/Alpha v.1/::1765421388
+index.apple-touch-icon.png::CompressedTexture2D/CompressedTexture2D::2732284085001553421::1762921341::1765421387::1::::<><><>0<>0<>d6278900b6e2590f4c78a1bede5f6a8a<>res://.godot/imported/index.apple-touch-icon.png-96f48d3d775b71502077762622c6ef19.ctex::
+index.icon.png::CompressedTexture2D/CompressedTexture2D::8586267575261152816::1762921341::1765421387::1::::<><><>0<>0<>bced5a13ed2793e619a4c668767fb6f9<>res://.godot/imported/index.icon.png-b2d47d44ed86cd5420e654e76fb8d8aa.ctex::
+index.png::CompressedTexture2D/CompressedTexture2D::10074130705689882::1762921341::1765421388::1::::<><><>0<>0<>720ec54b0af289ffe69e27bd3329f553<>res://.godot/imported/index.png-a0978affb972af06cd0760962a3e1333.ctex::
+::res://Playable Versions/Alpha v.1.1/::1765421388
+index.apple-touch-icon.png::CompressedTexture2D/CompressedTexture2D::8300357978016773855::1763409858::1765421387::1::::<><><>0<>0<>88e9d97614c9560eb508431e4f14d15d<>res://.godot/imported/index.apple-touch-icon.png-8ad2dca190eeaf4b139174e0626fc221.ctex::
+index.icon.png::CompressedTexture2D/CompressedTexture2D::7829475983650542142::1763409858::1765421387::1::::<><><>0<>0<>c3919bfbde099986f3e573556aa24035<>res://.godot/imported/index.icon.png-253b7e1507f6bad656be8986738e5574.ctex::
+index.png::CompressedTexture2D/CompressedTexture2D::7742695128922639350::1763409858::1765421388::1::::<><><>0<>0<>d625f2b9eb3dcbd76d523cab832ae678<>res://.godot/imported/index.png-31da93d148da460b41bd8edc02e34eaf.ctex::
+::res://Playable Versions/Alpha v.1.2/::1765421388
+index.apple-touch-icon.png::CompressedTexture2D/CompressedTexture2D::5955416983963033188::1763509642::1765421387::1::::<><><>0<>0<>a225a84dc1b5921961119afbffdbec1c<>res://.godot/imported/index.apple-touch-icon.png-cc420c88297acf138ecf2faa8d422b8c.ctex::
+index.icon.png::CompressedTexture2D/CompressedTexture2D::7569964901648941495::1763509642::1765421387::1::::<><><>0<>0<>04383bed88a5a2d9d2fb97f91d4f8c96<>res://.godot/imported/index.icon.png-cfa40cdc3abd5687ac2cf9c9e451a0a3.ctex::
+index.png::CompressedTexture2D/CompressedTexture2D::2757614108030152712::1763509642::1765421388::1::::<><><>0<>0<>56f158386936f25c03ed54c03be99232<>res://.godot/imported/index.png-4790e3f2333ce60e80444da7d6a136ef.ctex::
+::res://Playable Versions/Alpha v.1.3/::1765421388
+index.apple-touch-icon.png::CompressedTexture2D/CompressedTexture2D::5448473355090519525::1764738870::1765421387::1::::<><><>0<>0<>4aea4801956d2307045c8848c499a56e<>res://.godot/imported/index.apple-touch-icon.png-eae139ee0702b6c8e8ba2e23d18fa8a3.ctex::
+index.icon.png::CompressedTexture2D/CompressedTexture2D::34008903690942422::1764738870::1765421388::1::::<><><>0<>0<>0fa27baeddbfb74d4844c40391ba52cf<>res://.godot/imported/index.icon.png-d258100af81f85ed4f23e191de495a74.ctex::
+index.png::CompressedTexture2D/CompressedTexture2D::3968734854374181331::1764738870::1765421388::1::::<><><>0<>0<>e9d3a140a7bfac87c042ffc681dc89e5<>res://.godot/imported/index.png-bce221541e61f4318a71e789a78507d0.ctex::
+::res://Playable Versions/Pre-Alpha/::1765421388
+index.apple-touch-icon.png::CompressedTexture2D/CompressedTexture2D::2213843993512764119::1762747893::1765421388::1::::<><><>0<>0<>d0599c208844f5d7af266d6ce47c314e<>res://.godot/imported/index.apple-touch-icon.png-8f292cbaf48a48140188034b50004266.ctex::
+index.icon.png::CompressedTexture2D/CompressedTexture2D::1058090872873557985::1762747893::1765421388::1::::<><><>0<>0<>47d86553b96889b611049690f37fab6a<>res://.godot/imported/index.icon.png-9758cac0c9266317c0fa16ad7c723c4f.ctex::
+index.png::CompressedTexture2D/CompressedTexture2D::387290477229262297::1762747893::1765421388::1::::<><><>0<>0<>abb5269caf0fb304295472f248868f0c<>res://.godot/imported/index.png-15bea8dc16361d3130f7b9d3b48b6a8e.ctex::
+::res://Production Files/::1765421095
+::res://Resource/::1765421095
+player_stats.tres::Resource/PlayerStats::3987836946135155262::1763609033::0::1::::<><><>0<>0<><>::uid://bs78rfavvkdfa::::res://Scripts/player_stats.gd
+save_data.tres::Resource/SaveData::2830095100507586514::1763607452::0::1::::<><><>0<>0<><>::uid://bw20deg7vp8dm::::res://Resource/player_stats.tres<>uid://bshs02ybn7i6x::::res://Scripts/save_data.gd
+::res://Scenes/::1765421392
+enemy_fish.tscn::PackedScene/PackedScene::3456249505595443650::1765419988::0::1::::<><><>0<>0<><>::uid://w63xaay0yoji::::res://Scripts/enemy_fish.gd<>uid://dnvfvsnyvqwsl::::res://Assets/Fish_Mockups/DEEP OCEAN FISH .png<>uid://bw20deg7vp8dm::::res://Resource/player_stats.tres<>uid://byas67nd2rqct::::res://Scripts/enemy_interaction.gd
+interaction_component.tscn::PackedScene/PackedScene::3720665841687260495::1761875506::0::1::::<><><>0<>0<><>::uid://c4rmjcwnixjqv::::res://Scripts/interaction_component.gd
+ocean_world.tscn::PackedScene::8527634326218932339::1765421392::0::1::::<><><>0<>0<><>::uid://ykrq4rx4evrl::::res://Scripts/ocean_world.gd<>uid://dmqskhnvuqydx::::res://Scenes/player_fish.tscn<>uid://b8cd5utv2wejx::::res://Scripts/enemy_manager.gd<>uid://dayrlas80tltm::::res://Assets/Underwater Background2.png<>uid://bpih6oulmdx6q::::res://Scenes/enemy_fish.tscn<>uid://dxpfji6vpauqb::::res://Scripts/collectable_manager.gd
+player_fish.tscn::PackedScene/PackedScene::8035669371336929277::1765419988::0::1::::<><><>0<>0<><>::uid://e81jfvop1svn::::res://Scripts/player_fish.gd<>uid://b61bvxxixnrop::::res://Assets/Fish_Mockups/Aji.png<>uid://bw20deg7vp8dm::::res://Resource/player_stats.tres<>uid://c4rmjcwnixjqv::::res://Scripts/interaction_component.gd<>uid://1bgl4550w0al::::res://Assets/Tiny Under Progress Bar.png<>uid://eov18n5bq1c7::::res://Assets/Tiny Over Progress Bar.png<>uid://bv56i8yktvvcp::::res://Assets/Tiny Progress Bar.png
+::res://Scenes/Collectable Scenes/::1765419988
+bag_of_coin_collectable.tscn::PackedScene/PackedScene::4182344358239828239::1763706199::0::1::::<><><>0<>0<><>::uid://bnte7vg0iqumh::::res://Scenes/Collectable Scenes/collectable_template.tscn<>uid://yqxuuf0roqvd::::res://Assets/Loots/Bag of Coin.png
+battery_collectable.tscn::PackedScene/PackedScene::4612575881692477258::1763587411::0::1::::<><><>0<>0<><>::uid://bnte7vg0iqumh::::res://Scenes/Collectable Scenes/collectable_template.tscn<>uid://bu6jo838g6aem::::res://Assets/Loots/Battery.png
+coin_collectable.tscn::PackedScene/PackedScene::3162120890175218685::1763587411::0::1::::<><><>0<>0<><>::uid://bnte7vg0iqumh::::res://Scenes/Collectable Scenes/collectable_template.tscn<>uid://b4e0w62fl8w77::::res://Assets/Loots/Coin.png
+collectable_template.tscn::PackedScene/PackedScene::3338399955097088527::1765419988::0::1::::<><><>0<>0<><>::uid://b1h4uu1wn7w5m::::res://Scripts/collectable.gd
+fish_food_collectable.tscn::PackedScene/PackedScene::5784749973026262792::1763587411::0::1::::<><><>0<>0<><>::uid://bnte7vg0iqumh::::res://Scenes/Collectable Scenes/collectable_template.tscn<>uid://dwa65mnotuosc::::res://Assets/Loots/Fish Food.png
+treasure_collectable.tscn::PackedScene/PackedScene::8021099591578926096::1763587505::0::1::::<><><>0<>0<><>::uid://bnte7vg0iqumh::::res://Scenes/Collectable Scenes/collectable_template.tscn<>uid://bysrqdchx56v6::::res://Assets/Loots/Treasure Chest.png
+::res://Scripts/::1765421095
+collectable.gd::GDScript/GDScript::4227578862878840432::1763569945::0::1::::Collectable<>RigidBody2D<><>0<>0<><>::
+collectable_manager.gd::GDScript/GDScript::8804891247223871681::1763587495::0::1::::CollectableManager<>Node2D<><>0<>0<><>::
+enemy_fish.gd::GDScript/GDScript::1609891420594657474::1762920248::0::1::::EnemyFish<>CharacterBody2D<><>0<>0<><>::
+enemy_interaction.gd::GDScript/GDScript::4072102897489462511::1763705986::0::1::::EnemyInteraction<>Area2D<><>0<>0<><>::
+enemy_manager.gd::GDScript/GDScript::4707018084861116953::1764738377::0::1::::EnemyManager<>Node2D<><>0<>0<><>::
+interaction_component.gd::GDScript/GDScript::6844157070401162673::1765319319::0::1::::InteractionComponent<>Area2D<><>0<>0<><>::
+ocean_world.gd::GDScript/GDScript::1706238336955663025::1763607766::0::1::::OceanWorld<>Node2D<><>0<>0<><>::
+player_fish.gd::GDScript/GDScript::350474850108002143::1765311356::0::1::::PlayerFish<>CharacterBody2D<><>0<>0<><>::
+player_stats.gd::GDScript/GDScript::3717914240164627702::1762915851::0::1::::PlayerStats<>Resource<><>0<>0<><>::
+save_data.gd::GDScript/GDScript::3665409519443356869::1764778732::0::1::::SaveData<>Resource<><>0<>0<><>::
+shop.gd::GDScript/GDScript::418127689044410811::1765298467::0::1::::Shop<>GridContainer<><>0<>0<><>::
+::res://Singletons/::1765421095
+audio_manager.gd::GDScript/GDScript::4711422084261597962::1763570969::0::1::::<>Node<><>0<>0<><>::
+game_manager.gd::GDScript/GDScript::5058722919327390431::1764775672::0::1::::<>Control<><>0<>0<><>::
+game_manager.tscn::PackedScene/PackedScene::345988108190753751::1765419988::0::1::::<><><>0<>0<><>::uid://cecqoscigpehj::::res://Singletons/game_manager.gd<>uid://bw20deg7vp8dm::::res://Resource/player_stats.tres<>uid://f7srciu8forj::::res://Scripts/shop.gd<>uid://buawuvnyo81a7::::res://Assets/Health Bar Under.png<>uid://dl0jqrxr5ly3s::::res://Assets/PixelOperator8.ttf<>uid://c23dfkxbq1dc4::::res://Assets/Health Bar Over.png<>uid://ckeh1k4xa2iep::::res://Assets/Health Bar.png
+save_load_system.gd::GDScript/GDScript::5622216563469219335::1763607587::0::1::::<>Node<><>0<>0<><>::
+::res://Sounds/::1765421389
+audio_manager.tscn::PackedScene/PackedScene::3109387345357924997::1763586080::0::1::::<><><>0<>0<><>::uid://b8eioy8t3tcec::::res://Singletons/audio_manager.gd<>uid://wilbc1csr378::::res://Sounds/Lobsterfunk.mp3<>uid://daw6xquchl7bb::::res://Sounds/Eating_SFX.mp3<>uid://caq036tld8wep::::res://Sounds/Eating_SFX2.mp3<>uid://b1citbks08bfn::::res://Sounds/Button_UI_SFX_1.wav<>uid://bjd8oulw76tgf::::res://Sounds/coin.wav
+Button_UI_SFX_1.wav::AudioStreamWAV/AudioStreamWAV::4215979108640326035::1755577974::1765421389::1::::<><><>0<>0<>b8e06aa72dd0fcaa519ca06456f6bb66<>res://.godot/imported/Button_UI_SFX_1.wav-76d63310db3b336cc3a8f924c7eaffe7.sample::
+coin.wav::AudioStreamWAV/AudioStreamWAV::3026343140076967829::1710375490::1765421389::1::::<><><>0<>0<>96328c78f0900e2bbebde3cac54340c3<>res://.godot/imported/coin.wav-009d708f3db0f25652261605efb9d169.sample::
+Eating_SFX2.mp3::AudioStreamMP3/AudioStreamMP3::4807440996579916871::1755623455::1765421387::1::::<><><>0<>0<>52cce6f2ba419e5e91662b215d051060<>res://.godot/imported/Eating_SFX2.mp3-74b57191126984feff68dca6608dce7f.mp3str::
+Eating_SFX.mp3::AudioStreamMP3/AudioStreamMP3::7206602533074576427::1755623178::1765421387::1::::<><><>0<>0<>215d12aa5f8f86a4d1e8e2db185ccf78<>res://.godot/imported/Eating_SFX.mp3-3299c4581be5ba4ec47a864b96e1d919.mp3str::
+Hotbar_UI_SFX.wav::AudioStreamWAV/AudioStreamWAV::3924957928641375384::1755578559::1765421389::1::::<><><>0<>0<>36e7dc8c48e300feaf9fe66b5b6d2091<>res://.godot/imported/Hotbar_UI_SFX.wav-f2d1c3ff398fee43cf497b09edf668a9.sample::
+Lobsterfunk.mp3::AudioStreamMP3/AudioStreamMP3::1561339400110768313::1762902783::1765421387::1::::<><><>0<>0<>9b91d546e54acd721218031c6d4315cb<>res://.godot/imported/Lobsterfunk.mp3-214c369fc1e2e998e3807e8d254c1696.mp3str::
